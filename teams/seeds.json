@@ -1,0 +1,317 @@
+[
+{
+  "model": "teams.player",
+  "pk": 1,
+  "fields": {
+    "name": "Allison Becker",
+    "position": "GK",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 2,
+  "fields": {
+    "name": "Tyrone Mings",
+    "position": "DF",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 3,
+  "fields": {
+    "name": "Ben White",
+    "position": "DF",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 4,
+  "fields": {
+    "name": "Virgil Van Dijk",
+    "position": "DF",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 5,
+  "fields": {
+    "name": "Joel Matip",
+    "position": "DF",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 6,
+  "fields": {
+    "name": "Kieran Tierney",
+    "position": "DF",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 7,
+  "fields": {
+    "name": "Takehiro Tomiyasu",
+    "position": "DF",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 8,
+  "fields": {
+    "name": "Granit Xhaka",
+    "position": "MF",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 9,
+  "fields": {
+    "name": "N'golo Kante",
+    "position": "MF",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 10,
+  "fields": {
+    "name": "Jorginho",
+    "position": "MF",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 11,
+  "fields": {
+    "name": "Kevin de Bruyne",
+    "position": "MF",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 12,
+  "fields": {
+    "name": "Jordan Henderson",
+    "position": "MF",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 13,
+  "fields": {
+    "name": "Paul Pogba",
+    "position": "MF",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 14,
+  "fields": {
+    "name": "Harry Kane",
+    "position": "FW",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 15,
+  "fields": {
+    "name": "Mo Salah",
+    "position": "FW",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 16,
+  "fields": {
+    "name": "Danny Ings",
+    "position": "FW",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 17,
+  "fields": {
+    "name": "Cristiano Ronaldo",
+    "position": "FW",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 18,
+  "fields": {
+    "name": "Jamie Vardy",
+    "position": "FW",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 19,
+  "fields": {
+    "name": "Romelu Lukaku",
+    "position": "FW",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 20,
+  "fields": {
+    "name": "Bukayo Saka",
+    "position": "MF",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 21,
+  "fields": {
+    "name": "Nicolas Pepe",
+    "position": "MF",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 22,
+  "fields": {
+    "name": "Martin Ødegaard",
+    "position": "MF",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 23,
+  "fields": {
+    "name": "Marcos Alonso",
+    "position": "DF",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 24,
+  "fields": {
+    "name": "Andy Robinson",
+    "position": "DF",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 25,
+  "fields": {
+    "name": "Trent Alexander-Arnold",
+    "position": "DF",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 26,
+  "fields": {
+    "name": "Bernd Leno",
+    "position": "GK",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.player",
+  "pk": 27,
+  "fields": {
+    "name": "Ederson",
+    "position": "GK",
+    "totalPoints": 0
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 1,
+  "fields": {
+    "name": "Jacks 4-4-2",
+    "goalkeeper": 1,
+    "defenders": [
+      2,
+      3,
+      4,
+      6
+    ],
+    "midfielders": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "forwards": [
+      14,
+      15
+    ]
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 2,
+  "fields": {
+    "name": "Jacks 4-5-1",
+    "goalkeeper": 1,
+    "defenders": [
+      2,
+      3,
+      4,
+      6
+    ],
+    "midfielders": [
+      8,
+      9,
+      11,
+      21,
+      22
+    ],
+    "forwards": [
+      15
+    ]
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 3,
+  "fields": {
+    "name": "Jacks 433",
+    "goalkeeper": 1,
+    "defenders": [
+      2,
+      4,
+      6,
+      23
+    ],
+    "midfielders": [
+      9,
+      10,
+      11
+    ],
+    "forwards": [
+      14,
+      18,
+      17
+    ]
+  }
+}
+]
