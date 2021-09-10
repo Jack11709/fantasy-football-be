@@ -12,6 +12,7 @@ django = "*"
 psycopg2-binary = "*"
 djangorestframework = "*"
 djangorestframework-camel-case = "*"
+django-filter = "*"
 
 [requires]
 python_version = "3.7"

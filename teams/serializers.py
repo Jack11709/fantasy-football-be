@@ -105,3 +105,26 @@ class PopulatedTeamSerializer(TeamSerializer):
         team.save()
 
         return team
+
+    def update(self, instance, validated_data):
+        ''' Allows PUT request with populated players '''
+        instance.name = validated_data.get('name', instance.name)
+
+        goalkeeper_data = validated_data.pop('goalkeeper')
+        defenders_data = validated_data.pop('defenders')
+        midfielders_data = validated_data.pop('midfielders')
+        forwards_data = validated_data.pop('forwards')
+
+        goalkeeper = Player.objects.get(**goalkeeper_data)
+        defenders = [Player.objects.get(**data) for data in defenders_data]
+        midfielders = [Player.objects.get(**data) for data in midfielders_data]
+        forwards = [Player.objects.get(**data) for data in forwards_data]
+
+        instance.goalkeeper = goalkeeper
+        instance.defenders.set(defenders)
+        instance.midfielders.set(midfielders)
+        instance.forwards.set(forwards)
+
+        instance.save()
+
+        return instance

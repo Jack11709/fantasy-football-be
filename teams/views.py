@@ -1,6 +1,7 @@
 from rest_framework.generics import (
-    ListAPIView, ListCreateAPIView, RetrieveAPIView
+    ListAPIView, ListCreateAPIView, RetrieveUpdateDestroyAPIView
 )
+from django_filters.rest_framework import DjangoFilterBackend
 from .models import Team, Player
 from .serializers import PopulatedTeamSerializer, PlayerSerializer
 
@@ -10,7 +11,7 @@ class TeamListView(ListCreateAPIView):
     queryset = Team.objects.all()
     serializer_class = PopulatedTeamSerializer
 
-class TeamDetailView(RetrieveAPIView):
+class TeamDetailView(RetrieveUpdateDestroyAPIView):
     ''' GET View /teams/team_id '''
 
     queryset = Team.objects.all()
@@ -21,3 +22,5 @@ class PlayerListView(ListAPIView):
 
     queryset = Player.objects.all()
     serializer_class = PlayerSerializer
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['position']
