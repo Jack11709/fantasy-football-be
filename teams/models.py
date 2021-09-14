@@ -8,9 +8,12 @@ class Player(models.Model):
         ('FW', 'Forward'),
     )
 
-    name = models.CharField(max_length=40)
+    name = models.CharField(max_length=80)
     position = models.CharField(max_length=2, choices=POSITIONS)
     totalPoints = models.IntegerField(default=0)
+    image = models.CharField(max_length=100)
+    thumbnail = models.CharField(max_length=100)
+    club = models.CharField(max_length=20)
 
     def __str__(self):
         return f'{self.name}'

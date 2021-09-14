@@ -20,7 +20,7 @@ class TeamDetailView(RetrieveUpdateDestroyAPIView):
 class PlayerListView(ListAPIView):
     ''' GET View /players'''
 
-    queryset = Player.objects.all()
+    queryset = Player.objects.all().order_by('position')
     serializer_class = PlayerSerializer
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['position']
